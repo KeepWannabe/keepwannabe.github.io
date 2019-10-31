@@ -1,0 +1,2371 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<!-- Start of  Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c2de4a99-8990-41b0-a57e-d7aad30ee4ac"> </script>
+<!-- End of  Zendesk Widget script -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+
+
+<title>iLOTTE</title>
+<meta name="description" content="" />
+<meta http-equiv="Expires" content="-1"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="No-Cache">
+
+<meta name="_csrf" content="6438e9f7-447a-43ca-81a2-d21884d1b7bb" />
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<meta name="_csrf_parameter" content="_csrf"/>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+<link rel="dns-prefetch" href='https://dxclnrbvyw82b.cloudfront.net'>
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+
+
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/common.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/libs_ui/jquery-ui.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/libs_ui/jquery.bxslider.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/libs_ui/jquery.fancybox.775.css">
+
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/libs_ui/jquery.range.css">
+<link rel="stylesheet" type="text/css" href="/static-root/css/js_common.775.css">
+
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/layout.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/main.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/content.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/content_di.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/content_ma.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/content_pr.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/content_se.775.css">
+<link rel="stylesheet" href="https://www.ilotte.com/static-root/css/company.775.css">
+
+
+
+
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/libs_ui/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/libs_ui/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/libs_ui/jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/libs_ui/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/libs_ui/jquery.lazyload.min.js"></script> 
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/libs_ui/imagesloaded.pkgd.min.js"></script> 
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/libs_ui/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/content_ui.775.js"></script>
+    
+
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/libs_ui/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/libs_ui/jquery.tmplplus.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/libs_ui/jquery.form.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/libs_ui/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/libs_ui/jquery.range.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/jquery.serializejson.min.js"></script>
+    
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/dateFormat.min.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/jquery.dateFormat.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/jquery.number.min.js"></script>
+
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/fp2.min.js"></script> <!-- fingerprint2.min.js -->
+
+    
+
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/class.min.js"></script>
+
+
+    <script type="text/javascript" src="https://www.ilotte.com/javascript/global.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/javascript/message/common_in.js"></script>
+    
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/common.775.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/ajax.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/cookie.js"></script>
+
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/indolotte.common.775.js"></script>
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/common/common.biz.775.js"></script>
+    
+    <script type="text/javascript" src="https://www.ilotte.com/static-root/js/di/display.common.775.js"></script>
+
+<script type="text/javascript">
+// 
+</script>
+
+
+    <meta property="og:title" content="iLOTTE" />
+
+
+
+    
+    
+        <meta property="og:url" content="https://www.ilotte.com/login/loginForm.do"/>
+    
+
+<meta property="og:description" content=""/>
+
+
+    <meta property="og:image" content="https://www.ilotte.com/static-root/images/seo/logo.jpg" />
+
+
+
+    <meta property="og:image:secure_url" content="https://www.ilotte.com/static-root/images/seo/logo.jpg" />
+
+<meta property="og:site_name" content="ilotte.com"/>
+<meta property="og:type" content="website"/>
+
+<meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="iLOTTE" />
+
+
+<meta property="twitter:description" content=""/>
+
+
+    <meta property="twitter:image" content="https://www.ilotte.com/static-root/images/seo/logo.jpg" />
+
+
+
+    <meta property="twitter:creator" content="@iLOTTE_id" />
+
+
+
+    <meta property="twitter:site" content="@iLOTTE_id" />
+
+
+    
+    
+        <meta property="twitter:url" content="https://www.ilotte.com/login/loginForm.do"/>
+    
+
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.ilotte.com/login/loginForm.do" />
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="/static-root/css/ie.css">
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="/static-root/js/libs_ui/html5shiv.min.js"></script>
+<script src="/static-root/js/libs_ui/respond.min.js"></script>
+<![endif]-->
+<!-- Facebook Pixel Code -->
+<!-- 
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '235229720314238');  //do noit modify this number
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=235229720314238&ev=PageView&noscript=1"
+/></noscript>
+-->
+<script>
+var categoryNumberOfPage = "";
+<!-- Google Tag Manager & Facebook Pixel -->
+var event = '';
+var fb_content = '';
+var fb_track='track';
+var productN = '';
+var fullPageTitle = 'iLOTTE';
+
+
+
+dataLayer = [{'userID': USER.id, 'event' : event, 'crto' : {'email' : USER.emailHash ,'products' : productN } }];
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '235229720314238'); 
+    fbq('track', 'PageView');
+</script>
+
+<!--<noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=135242307187658&ev=PageView
+    &noscript=1"/>
+</noscript>-->
+<script>
+var fb_content_category = " >  > ";
+if (fb_content != ''){
+	fbq(fb_track, fb_content, {
+	      content_name: fullPageTitle,
+	      content_category: fb_content_category,
+	      content_ids: productN, 
+	      content_type: 'product'
+    });
+}
+</script>
+
+
+<!--Paste this code as high in the <head> of the page as possible-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8RHQH6');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Start Zendesk -->
+<script>
+  zE(function() {zE.hide();});
+  zE('webWidget', 'setLocale', 'id');
+
+  $(document).ready(function() {
+	  	var quick1 = $(window).width();
+		var quick2 = $('.quick_myviews').outerWidth();
+		  
+		 window.zESettings = {
+		  	webWidget: {
+		    	offset: { horizontal: -(((quick2 - quick1)/2)-20) +'px', vertical: '50px' },
+		  	}
+		 };
+	});
+</script>
+<!-- End Zendesk -->
+
+<link rel="shortcut icon" href="/static-root/images//main/Favicon_16.jpg">
+<link rel="shortcut icon" href="/static-root/images//main/Favicon_32.jpg">
+<style type="text/css">
+.cursorDefault {
+  cursor: default;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+.wrap_map .ico_lotte, .brand_visual_list_type02 p.view_all{display: none;}
+</style>
+
+</head>
+<body id="">
+<!--paste this code immediately after the opening <body> tag-->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8RHQH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+
+
+<div class="dimmed" style="display: none; z-index:8010; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0; filter: alpha(opacity=0);"></div>
+
+<!-- Ajax 로딩시 이미지 출력 영역 -->
+<div id="ajax_indicator" style="display:none">
+ <p style="text-align:center; padding:16px 0 0 0; left:40%; top:30%; position:absolute;"><!--img src="common/loading2.gif" /-->Loading...</p>
+</div>
+
+<div class="Tmpl" style="display:none;">
+	<script id="Tmpl_paginationTemplate" type="text/x-jquery-tmpl">
+	    <div class="paginate">
+	        <a href="javascript:;" class="btn_first page-first" {{if hideFirstBtn}}style="visibility:hidden;"{{/if}}><span class="hidden">First page</span></a>
+	        <a href="javascript:;" class="btn_prev page-prev" {{if hidePrevBtn}}style="visibility:hidden;"{{/if}}><span class="hidden">Prev page</span></a>
+	        <span class="page_num">
+	            {{each pageObj}}
+	            {{if active}}
+	                <strong>${pageCnt}</strong>
+	            {{else}}
+	                <a href="#" data-page-cnt="${pageCnt}">${pageCnt}</a>
+	            {{/if}}
+	            {{/each}}
+	        </span>
+	        <a href="javascript:;" class="btn_next page-next" {{if hideNextBtn}}style="visibility:hidden;"{{/if}}><span class="hidden">Next page</span></a>
+	        <a href="javascript:;" class="btn_last page-last"  {{if hideLastBtn}}style="visibility:hidden;"{{/if}}><span class="hidden">Last page</span></a>
+	    </div>
+	</script>
+	
+	<script id="Tmpl_moreTemplate" type="text/x-jquery-tmpl">
+	    <div>
+	        <a href="javascript:;" class="js_btn_more">More</a>
+	    </div>
+	</script>
+</div>
+
+<!-- dialog LP -->
+<div id="FO-EC-DIALOG" class="popmodal_type1 dialog wsize_s" style="display:none;">
+    <div class="body">
+        <div class="prd_thumb_wrap">
+            <img class="dialog_img" src="" alt="">
+        </div>
+        <p class="dialog_msg">
+        </p>
+        <div class="btn_wrap t_center" id="btn_wrap_yesno">
+            <button type="button" class="btn_type1 small btn_modal_ok" onclick="javascript:;"><span>Ya</span></button>
+            <button type="button" class="btn_type1 color01 small btn_modal_cancel" onclick="javascript:;"><span>Tidak</span></button>
+        </div>
+        
+         <div class="btn_wrap t_center" id="btn_wrap_ok_alert">
+            <button type="button" class="btn_type1 small btn_modal_ok" onclick="javascript:;"><span>OK</span></button>
+        </div>
+
+    </div>
+    <button id="foEcDialogCloseButton" type="button" class="btn_modal_close" onclick="$.fancybox.close();">Tutup</button>
+</div>
+<!-- //dialog LP -->
+
+<div id="skip"><a href="#contents">Skip Navigation</a></div>
+<div id="wrap" >   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+
+
+<div id="COMMON_ALERT_LAYER" class="popmodal_type1 dialog wsize_s" style="display:none;">
+    <div class="body">
+        <p class="dialog_msg" id="COMMON_ALERT_MESSAGE_AREA"></p>
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small" id="BTN_COMMON_ALERT_OK"><span>OK</span></button>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="/javascript/message/di_in.js"></script>
+
+
+<script>
+var CURRENT_LOCALE_LANGUAGE = "in";
+var DEPTH1_CATEGORY = [{"categoryNumber":"000000011000","categoryName":"Fashion"},{"categoryNumber":"000000013000","categoryName":"Kecantikan & Kesehatan"},{"categoryNumber":"000000015000","categoryName":"Ibu & Anak"},{"categoryNumber":"000000017000","categoryName":"Elektronik & Rumah"},{"categoryNumber":"000000021000","categoryName":"Olahraga & Hobi"},{"categoryNumber":"000000020000","categoryName":"Bahan Makanan & Layanan"}];
+var MALL_IN_MALL_LOTTE_MART_NAME = "LOTTE Mart";
+var MALL_IN_MALL_AVENUE_NAME = "LOTTE SHOPPING AVENUE";
+var MALL_IN_MALL_LEJEL_NAME = "LEJEL SHOPPING";
+var MALL_IN_MALL_MAP_NAME = "Planet Sports";
+var MALL_IN_MALL_KMALL_NAME = "K-Mall";
+var MALL_IN_MALL_KIDZSTATION_NAME = "Kidz Station";
+var MALL_IN_MALL_BESTDENKI_NAME = "Best Denki";
+var MALL_IN_MALL_ROOT_CATEGORY_NUMBER = "";
+var MALL_IN_MALL_MAIN_CATEGORY_NUMBER = "";
+
+if(CURRENT_LOCALE_LANGUAGE == "en"){
+	DEPTH1_CATEGORY = [{"categoryNumber":"000000011000","categoryName":"Fashion"},{"categoryNumber":"000000013000","categoryName":"Beauty & Health"},{"categoryNumber":"000000015000","categoryName":"Mom & Kids"},{"categoryNumber":"000000017000","categoryName":"Electronic & Living"},{"categoryNumber":"000000021000","categoryName":"Sport & Hobby"},{"categoryNumber":"000000020000","categoryName":"Grocery & Service"}];
+}else{
+	DEPTH1_CATEGORY = [{"categoryNumber":"000000011000","categoryName":"Fashion"},{"categoryNumber":"000000013000","categoryName":"Kecantikan & Kesehatan"},{"categoryNumber":"000000015000","categoryName":"Ibu & Anak"},{"categoryNumber":"000000017000","categoryName":"Elektronik & Rumah"},{"categoryNumber":"000000021000","categoryName":"Olahraga & Hobi"},{"categoryNumber":"000000020000","categoryName":"Bahan Makanan & Layanan"}];
+}
+
+var MALL_IN_MALL_DEPTH1_CATEGORY;
+
+var THANKYOU_CATEGORYNUMBER = "000000117288";
+var LAYOUT_CATEGORYNUMBER = "000000010720";
+var PROPERTIES_LOTTEMART_CATEGORYNUMBER = "000000101743";
+var PROPERTIES_AVENUE_CATEGORYNUMBER = "000000101242";
+var PROPERTIES_LEJEL_CATEGORYNUMBER = "000000101821";
+var PROPERTIES_MAP_CATEGORYNUMBER = "000000111248";
+var PROPERTIES_ILOTTE_MALL_CODE = "0001";
+var PROPERTIES_LOTTEMART_MALL_CODE = "0044";
+var PROPERTIES_AVENUE_MALL_CODE = "0019";
+var PROPERTIES_LEJEL_MALL_CODE = "0108";
+var PROPERTIES_MAP_MALL_CODE = "0172";
+var PROPERTIES_KMALL_MALL_CODE = "0188";
+var PROPERTIES_KIDZSTATION_MALL_CODE = "0207";
+var PROPERTIES_BESTDENKI_MALL_CODE = "0203";
+var PROPERTIES_KINO_MALL_CODE = "0227";
+
+var PROPERTIES_JAJANAN_PAGE_NO = "";
+
+var nowCategoryNumber = "" == "" ? "" : "";
+/* common code : DI002 */
+var DISPLAY_MALL_CODE = "" == "" ? "" :  "";
+if(typeof(DISPLAY_MALL_CODE) == "undefined" || DISPLAY_MALL_CODE == "") DISPLAY_MALL_CODE = "0001";
+
+var CHANNEL_PROCESSED_YN = "";
+var CHANNEL_VOUCHER_YN = "";
+var CHANNEL_ISSUED_VOUCHER_YN = "";
+var CHANNEL_DOWNLOAD_YN = "";
+var CHANNEL_REQUEST_PARAMETER_KEY_CH_DOWNLOAD_FLAG = "chDl";
+var CHANNEL_VOUCHER_LIST = null;
+var PROPERTIES_LOTTEMART_DEFAULT_SELLER_NUMBER = "100000661";
+var BEST_DENKI_PARTNER_NO = "100007404^100008644";
+var BEST_DENKI_MIN_PRICE_FOR_VOUCHER = "500000";
+
+</script>
+
+
+
+
+<script>
+CONSTANTS.MALLINMALLCODE = {"codes":["0019","0044","0108","0172","0188","0203","0207","0227"],"values":["LOTTE AVENUE","LOTTE Mart","LEJEL Shopping","Planet Sports","K-Mall","Best Denki","Kidz Station","Kinokuniya"]};
+CONSTANTS.BRANDMALLCODE = {"codes":["0020","0022","0023","0024","0025","0028","0029","0031","0033","0034","0035","0036","0037","0040","0043","0107","0027","0032","0109","0111","0112","0114","0115","0116","0117","0119","0120","0122","0124","0125","0127","0128","0130","0132","0135","0136","0137","0138","0139","0140","0141","0143","0144","0146","0147","0148","0149","0151","0152","0153","0154","0157","0158","0159","0160","0161","0162","0163","0164","0165","0168","0169","0170","0173","0174","0175","0176","0177","0178","0180","0181","0183","0185","0186","0187","0189","0190","0191","0192","0193","0194","0195","0196","0198","0199","0200","0201","0202","0204","0205","0206","0208","0209","0210","0211","0212","0213","0214","0215","0216","0217","0218","0219","0220","0221","0222","0223","0224","0225","0226","0228","0229","0230","0231","0232","0233","0234","0235","0236","0237","0238","0239","0240","0241","0242","0243","0244","0245","0246","0247","0248","0249","0250","0251","0252","0253","0254","0255","0256","0257","0258","0259","0260","0261","0262","0263","0264","0265","0266","0267","0268","0269","0270","0271","0272","0273","0274","0275","0276"],"values":["Clarins","Heel n Tote","Giordano","JYSK","Guerlain","Bosch","Flower Advisor","House of Samsonite","Electrolux","Pesona Nusantara","JBL by Harman","Herschel","Bose","ELLE","National Geographic","Yamaha Music","LEGO","Canon","Apple","Piaggio Vespa","Lucky Baby","KING KOIL","Character Land","Yamaha Motor","Teddy House","Audi","Volkswagen","FUJIFILM","Black+Decker","Alleira Plaza","ERAFONE","Elizabeth Arden","MamyPoko","Pigeon","MITSUBISHI MOTORS","HighPoint","Lampe Berger","SK-II","Harnn","The Balm","Casio","Elago","Yves Rocher","Stabilo","Anne Avantie","The Goods Dept","Nature's Plus","Bateeq","The Saem","Missha","Giordano Ladies","Holika","Lancome","Kiehl's","TOTO Kitchen","Wacoal","Leica","LG","Clio","Vivo","Nature Republic","Watch Zone","Make Up For Ever","Converse","Reebok","Skechers","New Balance","ASICS","Livien Furniture","Bengkel Bos","Crocs","Airwalk","BOLDe","Polo Ralph Lauren","Polo","Baba Sling","The First Years","Tiny Button","Happy Diapers","Baby Zen","Philips Avent","Blackmores","Mum & Me","фFILA Korea","Heavenly blush","Hana Tour","Mu Gung Hwa","Indofood","FIND KAPOOR","JJ Royal","Lock & Lock","Mamamia","AllThumb","BT21","Heimish","Imvely","Innisfree","Pyunkang Yul","Secret Key","A'PIEU","Speedo","COSRX","League","Bonia Watch","KLAVUU","Martha Tilaar","KOSE","By Lizzie Parra","Daeng Gi Meo Ri","Focallure","MARHEN.J","Wedding and Indo","Vintage Story","CheongKwanJang","The Face Shop","Laneige","Masami Shouko","Panasonic","Yankee Candle","Adidas Combat","Eigerindo Store","Sulwhasoo","Wardah","Make Over","Emina","Alpha Stationery","Bag's Station","Spalding","The Olive House","Philips Lighting","Precise","Voucher Center","Peak Indonesia","910 Nineten","ASQ","Autobacs","Kitchenart","SOME BY MI","Aukey","Philips Mobile Accessories","BrunBrun Paris","Mediheal","Purito","Hoco","Borofone","Sony","W.Dressroom","ALDO","Primafit","VT Cosmetics","Vue De Pulang","Bandar Karpet","Dreskin","Aqutop","Biorace","VDL","Etude House","Mamonde","Happyfit"]};
+CONSTANTS.pm = {};
+CONSTANTS.pm.CODE_LIST_MA034 = {"codes":["3001","3002","3003","3005"],"values":["Diskon Produk","Diskon Pesanan","Diskon Biaya Pengiriman","Gift Voucher"]};
+</script>
+<script type="text/javascript" src="/static-root/js/pm/Promotion.common.775.js"></script>
+<script type="text/javascript" src="/static-root/js/di/display.navigator.775.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+
+<script>
+$(document).ready(function(){	
+    /* var propertiesMallCdiLotte = '0001';
+    var displayMallCd = '0001'; */
+	indolotte.front.ec.display.navigator.init(); 	
+	if(typeof(nowCategoryNumber) != "undefined" && nowCategoryNumber != ""){
+		   indolotte.front.ec.display.navigator.getMnaContent(); 
+	}
+	
+	if ( CHANNEL_PROCESSED_YN === 'N' && CHANNEL_VOUCHER_YN === 'Y' ) {
+		indolotte.front.pm.Common.renderingChannelVoucher(CHANNEL_VOUCHER_LIST, CHANNEL_ISSUED_VOUCHER_YN, CHANNEL_DOWNLOAD_YN);
+	}
+	indolotte.front.ec.display.common.getProductDetailQuickList();
+	
+		
+		
+			if(getCurrentUser().isLoggedIn){
+		        indolotte.front.ec.display.common.partnerGet(); 
+		    }else{      
+		        $("#lottemartHeaderSllrNo").val(PROPERTIES_LOTTEMART_DEFAULT_SELLER_NUMBER);
+		        indolotte.front.ec.display.common.getPartnerName();
+		    }
+		
+		
+});
+</script>
+    <div class="top_popbanner_wrap" style="display:none" id="position000010257">
+        
+    </div>
+    <div id="header">
+        <img class="kmall_side_50 show" src="/static-root/images/common/kmall_right_50.png" style="right:0"/>
+        <img class="kmall_side_50 show" src="/static-root/images/common/kmall_left_50.png" style="left:0"/>
+        <div class="header_innr" id="header_mall"><!-- lotter  avenue -->
+            <div class="utils">
+                <div class="utils_innr">
+                    <div class="util_mall">
+                        <a href="#" class="btn_mall" onclick="return false;">MALL</a>
+                        <ul class="malltab clearfix" id="topMallList">
+                            <li class="malltab-list ilotte hover" data-tag="ilotte">
+                                <a href="/">iLOTTE</a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list kmall " data-tag="kmall">
+                                <a style="position: relative;" href="/MallInMall/K-Mall/000000113775/main.do">
+                                    K-Mall
+                                </a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list avenue " data-tag="avenue">
+                                <a href="/MallInMall/LOTTE-AVENUE/000000101242/main.do">LOTTE Avenue</a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list map " data-tag="map">
+                                <a style="position: relative;" href="/MallInMall/Planet-Sports/000000111248/main.do">
+                                    Planet Sports
+                                </a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list kidz " data-tag="kidz">
+                                <a style="position: relative;" href="/MallInMall/Kidz-Station/000000117892/main.do">
+                                    Kidz Station
+                                    <span class="blink_me_new">NEW</span>
+                                </a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list denki " data-tag="denki">
+                                <a style="position: relative;" href="/MallInMall/Best-Denki/000000116735/main.do">
+                                    Best Denki
+                                    <span class="blink_me_new">NEW</span>
+                                </a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list kino " data-tag="kino">
+                                <a style="position: relative;" href="/MallInMall/Kinokuniya/000000120924/main.do">
+                                        Kinokuniya
+                                        <span class="blink_me_new">NEW</span>
+                                </a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list lejel " data-tag="lejel">
+                                <a href="/MallInMall/LEJEL-Shopping/000000101821/main.do">Lejel Shopping</a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+                            <li class="malltab-list mart " data-tag="mart">
+                                <a href="/MallInMall/LOTTE-Mart/000000101743/main.do">LOTTE Mart</a>
+                                <div class="mall_banner">
+                                    <div class="mall_banner_con"></div>
+                                </div>
+                            </li>
+<!--                             <li class="malltab-list brandmall" data-tag="brandmall"> -->
+<!--                                 <a href="/brandmall/list.do"  -->
+<!--                                         onclick="indolotte.front.ec.display.common.moveBrandMall(); return false;"> -->
+
+<!--                                 <div class="mall_banner"> -->
+<!--                                     <div class="mall_banner_con"> -->
+<!--                                         <a href="javascript:return false;"> -->
+
+
+<!--                                         </a> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
+<!--                             </li> -->
+                        </ul>
+                    </div>
+                    <ul class="util_menus">
+                        
+                            
+                            
+	                            <li class="util_login" title="Login">
+	                                <a href="#" onclick="indolotte.front.ec.display.common.moveLogin(); return false;">Login</a>
+	                            </li>
+                            
+                        
+                        
+                        <li class="util_help" title="Customer Service">
+                            <a href="#" onclick="javascript:indolotte.cs.CustomerCenter.navigator.linkMain(); return false;">
+                                <span class="respond_min_hide">Customer Service</span>
+                            </a>
+                        </li>
+                        <li class="layer_ui util_app" title="Download App">
+                            <a href="#" class="layer_ui_btn" onclick="return false;">Download App</a>
+                            <div class="poplayer_wrap right">
+                                <div class="poplayer_type1 pop_util_appdown">
+                                    <a href="#" onclick="return false;" class="i_app_android">
+                                        <span class="android_icon"></span>
+                                        Android
+                                    </a>
+                                    <a href="#" onclick="return false;" class="i_app_ios">
+                                        <span class="ios_icon"></span>
+                                        iOS
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="layer_ui util_lang" title="Bahasa">
+                            <a href="#" onclick="return false;" class="layer_ui_btn" id="languageDisplay">ID</a>
+                            <div class="poplayer_wrap lang">
+                                <div class="pop_lang">
+                                    <a href="#" onclick="indolotte.front.ec.display.common.chLocale('en'); return false;">English - EN</a>
+                                    <a href="#" onclick="indolotte.front.ec.display.common.chLocale('in'); return false;">Bahasa - ID</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gnb">
+                <div class="gnb_innr lotter">
+                    <img class="kmall_side_60" src="/static-root/images/common/kmall_right_60.png" style="right:0"/>
+                    <img class="kmall_side_60" src="/static-root/images/common/kmall_left_60.png" style="left:0"/>
+
+                    <div class="top_comm_area">
+                        <div class="layer_ui">
+                            <span class="logo layer_ui_btn"><a href="#" onclick="indolotte.front.ec.display.common.moveTopMain(); return false;"><img src="/static-root/images/common/srclogo_ilotte.png" alt="" id="topMallLogo"></a><span>arrow</span></span>                           
+                            <div class="poplayer_wrap">
+                                <ul class="txt_hidden">
+                                    <li><a href="/MallInMall/K-Mall/000000113775/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000113775', 'K-Mall'); return false;"><span class="static-logo-mall ilotte"></span></a></li>
+                                    <li><a href="/MallInMall/K-Mall/000000113775/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000113775', 'K-Mall'); return false;"><span class="static-logo-mall kmall"></span></a></li>
+                                    <li><a href="/MallInMall/LOTTE-AVENUE/000000101242/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101242', 'LOTTE-AVENUE'); return false;"><span class="static-logo-mall lsa"></span></a></li>
+                                    <li><a href="/MallInMall/Planet-Sports/000000111248/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000111248', 'Planet-Sports'); return false;"><span class="static-logo-mall map"></span></a></li>
+                                    <li><a href="/MallInMall/Kidz-Station/000000117892/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000117892', 'Kidz-Station'); return false;"><span class="static-logo-mall kidz"></span></a></li>
+                                    <li><a href="/MallInMall/Best-Denki/000000116735/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000116735', 'Best-Denki'); return false;"><span class="static-logo-mall denki"></span></a></li>
+                                    <li><a href="/MallInMall/Kinokuniya/000000120924/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000120924', 'Kinokuniya'); return false;"><span class="static-logo-mall kino"></span></a></li>
+                                    <li><a href="/MallInMall/LEJEL-Shopping/000000101821/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101821', 'LEJEL-Shopping'); return false;"><span class="static-logo-mall lejel"></span></a></li>
+                                    <li><a href="/MallInMall/LOTTE-Mart/000000101743/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101743', 'LOTTE-Mart'); return false;"><span class="static-logo-mall mart"></span></a></li>
+                                    <li><a href="/brandmall/list.do" onclick="indolotte.front.ec.display.common.moveBrandMall(); return false;"><div class="brandmall-section"><span class="static-logo brand">Brand Mall</span></div></a></li>
+                                                                     
+                                </ul>
+                            </div>
+                        </div>                        
+                        <!-- <div class="hamburger_menu">
+                            <button class="hamburger_btn"></button>
+                        </div> -->                       
+                        <div class="logo_group">
+                            <span style="display:inline"><a href="/"  onclick="indolotte.front.ec.display.common.moveMain(); return false;"><img src="/static-root/images/common/logo.png" alt="ILOTTE"></a></span>
+                            <span style="display:none"><a href="/MallInMall/K-Mall/000000113775/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000113775', 'K-Mall'); return false;"><img style="height: 30px; width: 100px; padding-top: 17px; padding-left: 15px;" src="/static-root/images/common/logo_kmall.png" alt="KMALL"></a></span>
+                            <span style="display:none"><a href="/MallInMall/LOTTE-AVENUE/000000101242/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101242', 'LOTTE-AVENUE'); return false;"><img src="/static-root/images/common/logo_avenue.png" alt="AVENUE"></a></span>
+                            <span style="display:none"><a href="/MallInMall/Planet-Sports/000000111248/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000111248', 'Planet-Sports'); return false;"><img src="/static-root/images/common/logo-planetsports.png" alt="PLANETSPORTS"></a></span>
+                            <span style="display:none"><a href="/MallInMall/Kidz-Station/000000117892/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000117892', 'Kidz-Station'); return false;"><img src="/static-root/images/common/logo-kidzstation.png" alt="KIDZSTATION"></a></span>
+                            <span style="display:none"><a href="/MallInMall/Best-Denki/000000116735/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000116735', 'Best-Denki'); return false;"><img src="/static-root/images/common/logo_bestdenki.png" alt="BESTDENKI"></a></span>
+                            <span style="display:none"><a href="/MallInMall/Kinokuniya/000000120924/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000120924', 'Kinokuniya'); return false;"><img src="/static-root/images/common/logo_kinokuniya.png" alt="KINOKUNIYA"></a></span>
+                            <span style="display:none"><a href="/MallInMall/LEJEL-Shopping/000000101821/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101821', 'LEJEL-Shopping'); return false;"><img src="/static-root/images/common/logo_lejel.png" alt="LEJEL"></a></span>
+                            <span style="display:none"><a href="/MallInMall/LOTTE-Mart/000000101743/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101743', 'LOTTE-Mart'); return false;"><img src="/static-root/images/common/logo_mart.png" alt="MART"></a></span>
+                        </div>                        
+                        <!-- search -->
+                        <fieldset class="top_search">                       
+                            <div class="banner_group">
+                                <div class="mall_banner ilotte_home" data-tag="ilotte">
+                                    <a href="/"  onclick="indolotte.front.ec.display.common.moveMain(); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner1.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            Temukan pengalaman belanja online dengan konsep mall in mall pertama di Indonesia dengan berbagai koleksi produk terbaik fashion, kecantikan, perangkat digital, fresh food, furniture dan masih banyak lagi.   
+                                        </p>
+                                    </a>
+                                    <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMain(); return false;">iLOTTE Now</button>
+                                </div>
+                                <div class="mall_banner kmall_home" data-tag="kmall">
+                                    <a href="/MallInMall/K-Mall/000000113775/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000113775', 'K-Mall'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner5.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            Destinasi nomor 1 untuk segala kebutuhan produk korea kamu.
+                                        </p>
+                                    </a>
+                                   <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMallMain('000000113775', 'K-Mall'); return false;">Shop Now</button>
+                                </div>
+                                <div class="mall_banner ilottemall" data-tag="avenue">
+                                    <a href="/MallInMall/LOTTE-AVENUE/000000101242/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101242', 'LOTTE-AVENUE'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            Nikmati sensasi berbelanja dengan konsep terbaru produk fashion, makanan, furnitur dan hiburan di tempat yang nyaman untuk berbelanja sekaligus meluangkan waktu bersama keluarga dan kerabat tercinta.
+                                        </p>
+                                    </a>
+                                    <button class="border_btn"  onclick="indolotte.front.ec.display.common.moveMallMain('000000101242', 'LOTTE-AVENUE'); return false;">Avenue Now</button>
+                                </div>
+                                <div class="mall_banner map_home" data-tag="map">
+                                    <a href="/MallInMall/Planet-Sports/000000111248/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000111248', 'Planet-Sports'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner4.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            PlanetSports.net adalah bagian dari PT MAP Aktif Adiperkasa (MAP Active) subsidiari dari PT Mitra Adiperkasa. Ritel perlengkapan olahraga dari berbagai merek premium dunia seperti Skechers, Asics, Reebok, Converse, New Balance, Airwalk, Diadora, Crocs, Puma, Speedo, dan lainnya.
+                                        </p>
+                                    </a>
+                                   <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMallMain('000000111248', 'Planet-Sports'); return false;">Visit Planet Sports</button>
+                                </div>
+                                <div class="mall_banner kidz_home" data-tag="kidz">
+                                    <a href="/MallInMall/Kidz-Station/000000117892/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000117892', 'Kidz-Station'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner6.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            Kidz Station adalah bagian dari PT MAP Aktif Adiperkasa (MAP Active) subsidari dari PT Mitra Adiperkasa. Ritel mainan, pakaian dan sepatu yang paling di cintai oleh anak-anak di Indonesia, dengan berbagai merek premium dunia seperti Hasbro, Disney, Barbie, PlayDoh, Carter’s, OshKosh, LEGO, Marvel dan lainnya.
+                                        </p>
+                                    </a>
+                                   <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMallMain('000000117892', 'Kidz-Station'); return false;">Visit Kidz Station</button>
+                                </div>
+                                <div class="mall_banner denki_home" data-tag="denki">
+                                    <a href="/MallInMall/Best-Denki/000000116735/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000116735', 'Best-Denki'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner7.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            BEST DENKI adalah ritel elektronik terbesar dari Jepang. Kami memiliki lebih dari 357 toko ritel di seluruh dunia dengan 25 toko di Indonesia. Kami beroperasi dengan integritas demi memberikan kenyamanan dan kepuasan untuk memenuhi gaya hidup bagi pelanggan kami.
+                                        </p>
+                                    </a>
+                                   <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMallMain('000000116735', 'Best-Denki'); return false;">Shop Now</button>
+                                </div>
+                                <div class="mall_banner kino_home" data-tag="kino">
+                                    <a href="/MallInMall/Kinokuniya/000000120924/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000120924', 'Kinokuniya'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner8.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            Kinokuniya adalah toko buku Internasional yang menyediakan buku-buku dan barang-barang stationary. Kinokuniya memberikan wadah untuk budaya pop, tren, serta komunitas yang membuat Kinokuniya berbeda dari toko buku yang lain.
+                                        </p>
+                                    </a>
+                                   <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMallMain('000000120924', 'Kinokuniya'); return false;">Visit Kinokuniya</button>
+                                </div>
+                                <div class="mall_banner lejel_home" data-tag="lejel">
+                                    <a href="/MallInMall/LEJEL-Shopping/000000101821/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101821', 'LEJEL-Shopping'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner3.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            Dapatkan pengalaman berbelanja terbaik untuk keluarga kamu dengan kemudahan belanja produk pilihan berkualitas kami meliputi produk kesehatan, kecantikan, peralatan rumah tangga serta olahraga yang aman dan nyaman digunakan.
+                                        </p>
+                                    </a>
+                                    <button class="border_btn" onclick="indolotte.front.ec.display.common.moveMallMain('000000101821', 'LEJEL-Shopping'); return false;">LEJEL SHOPPING Now</button>
+                                </div>
+                                <div class="mall_banner mart_home" data-tag="mart">
+                                    <a href="/MallInMall/LOTTE-Mart/000000101743/main.do" onclick="indolotte.front.ec.display.common.moveMallMain('000000101743', 'LOTTE-Mart'); return false;">
+                                        <img src="/static-root/images/common/gnb_ab_banner2.png" class="img_first" alt="" />
+                                        <p class="txt">
+                                            LOTTE Mart merupakan sahabat belanja keluarga kamu dimana segala kebutuhan rumah tangga seperti produk segar, makanan kemasan, pakaian, perabotan rumah tangga, elektronik dan produk lainnya dapat ditemukan disini.  
+                                        </p>
+                                    </a>
+                                    <button class="border_btn"  onclick="indolotte.front.ec.display.common.moveMallMain('000000101743', 'LOTTE-Mart'); return false;">LOTTE Mart Now</button>
+                                </div>
+                            </div>                            
+                            
+
+
+
+
+<script>var searchKeywordLanding = 'the face shop,https://www.ilotte.com/di/displayView/The-Face-Shop/000000080347/view.do|pulsa,https://www.ilotte.com/di/displayView/pulsa.do|test,https://www.ilotte.com/ev/listOfEvent.do|pulsa indosat,https://www.ilotte.com/di/displayView/pulsa.do|pulsa xl,https://www.ilotte.com/di/displayView/pulsa.do|pulsa telkomsel,https://www.ilotte.com/di/displayView/pulsa.do|';</script>
+<script type="text/javascript" src="/static-root/js/se/search.search_header.775.js"></script>
+<script type="text/javascript" src="/static-root/js/se/search.search_header_ark.775.js"></script>
+<script>
+var msg = "Silakan masukkan kata kunci.";
+</script> 
+
+<script> 
+    $(document).ready(function(){
+    	var mallNo = DISPLAY_MALL_CODE;
+        if(mallNo != null && mallNo != "" && mallNo != "0001"){
+        	$("#searchHeaderForm").children("input[name='mallNo']").val(mallNo);
+        	$("#searchHeaderForm").children("input[name='mallMainNo']").val(mallNo);
+        	$("#searchHeaderForm").children("input[name='mallNoExclude']").val(mallNo);
+        	//showMallList(mallNo);               
+        } else {
+            $("#searchHeaderForm").children("input[name='mallNo']").val("");
+            $("#searchHeaderForm").children("input[name='mallMainNo']").val("");
+            $("#searchHeaderForm").children("input[name='mallNoExclude']").val("");
+	        //showMallList('ALL');        	      	
+        }
+        
+        //dikeluarkan dari kondisi lotte mart
+        
+        /* if("" != $("#headerSllrNo").val() && typeof $("#headerSllrNo").val() != "undefined"){
+        	$("#searchHeaderForm").children("input[name='sllrNo']").val($("#headerSllrNo").val());
+        } */
+        
+        //dikeluarkan dari kondisi lotte mart
+        var lmiSellerNo = $("#lottemartHeaderSllrNo").val();
+        $("#searchHeaderForm").children("input[name='lmiSellerNo']").val(lmiSellerNo);
+        $("#searchHeaderForm").children("input[name='showAllIlotteProduct']").val(true);
+    });
+    
+    /* function showMallList(mallNo){
+    	var MALL_CODE_LIST = {"codes":["0019","0044","0108","0172","0188","0203","0207","0227"],"values":["LOTTE AVENUE","LOTTE Mart","LEJEL Shopping","Planet Sports","K-Mall","Best Denki","Kidz Station","Kinokuniya"]};
+        var str = "<li id='ALL'><a href=\"javascript:setMallCode('ALL','ALL');\">ALL</a></li>\n";
+        if(mallNo == 'ALL'){
+        	str = "<li class='on' id='ALL'><a href=\"javascript:setMallCode('ALL','ALL');\">ALL</a></li>\n";
+        } else {
+        	str = "<li id='ALL'><a href=\"javascript:setMallCode('"+mallNo+"','ALL');\">ALL</a></li>\n";
+        }
+        
+        //-- this is added to make sure when brand mall is selected, ALL is the default selectedMallName
+        $("#selectedMallName").text('ALL');
+        $("#selectedMallName").val('ALL');
+        $("#searchHeaderForm").children("input[name='mallNo']").val("");
+        
+        $("#mallUL").append(str);
+        for(var i = 0; i < MALL_CODE_LIST.codes.length; i++) {
+        	if(MALL_CODE_LIST.codes[i] == mallNo ){
+        		str = "<li class='on' id='" + MALL_CODE_LIST.codes[i] + "'><a href=\"javascript:setMallCode('" + MALL_CODE_LIST.codes[i] + "','" + MALL_CODE_LIST.values[i] + "');\">" +  MALL_CODE_LIST.values[i] + "</a></li>\n";
+        		$("#selectedMallName").text(MALL_CODE_LIST.values[i]);
+        		$("#selectedMallName").val(MALL_CODE_LIST.codes[i]);
+        		$("#searchHeaderForm").children("input[name='mallNo']").val(mallNo);
+            } else {
+            	 str = "<li id='" + MALL_CODE_LIST.codes[i] + "'><a href=\"javascript:setMallCode('" + MALL_CODE_LIST.codes[i] + "','" + MALL_CODE_LIST.values[i] + "');\">" +  MALL_CODE_LIST.values[i] + "</a></li>\n";
+            }
+            $("#mallUL").append(str);
+        } 
+    }
+    
+    function setMallCode(mallCode, mallName){
+        if(mallName != "ALL"){
+            $("#searchHeaderForm").children("input[name=mallNo]").val(mallCode);
+        }else{
+            $("#searchHeaderForm").children("input[name='mallNo']").val("");
+        }
+        $("#selectedMallName").text(mallName);
+        $("#selectedMallName").val(mallCode);
+        $("#selectMallBox").attr("class","select_ui");
+        $("#mallUL").children().attr("class","");
+        $("#"+mallCode).attr("class","on");
+    } */ //not used after revamp header EC
+</script>
+<script id="adsTemplate" type="text/x-jQuery-tmpl">
+    <li><a href="${targetPageLinkURLAddress}">${advertisementWordsContent}</a></li>
+</script>
+<script id="popkeywordTemplate" type="text/x-jQuery-tmpl">
+{{if rank < 4 }}
+    <li><span style="color:red" class="num_rank">${rank}.</span><a style="color:red" href="javascript:indolotte.front.ec.search.search_header.doKeywordSearch('${popkeyword}');" class="keyword">${popkeyword}</a></li>
+{{else}}
+    <li><span class="num_rank">${rank}.</span><a href="javascript:indolotte.front.ec.search.search_header.doKeywordSearch('${popkeyword}');" class="keyword">${popkeyword}</a></li>
+{{/if}}
+</script>
+<script id="suddenKeywordTemplate" type="text/x-jQuery-tmpl">
+    <li>
+{{if rank < 4 }}
+        <span style="color:red" class="num_rank">${rank}.</span>
+        <a style="color:red" href="javascript:indolotte.front.ec.search.search_header.doKeywordSearch('${suddenKeyword}');" class="keyword">${suddenKeyword}</a> 
+{{else}}
+        <span class="num_rank">${rank}.</span>
+        <a href="javascript:indolotte.front.ec.search.search_header.doKeywordSearch('${suddenKeyword}');" class="keyword">${suddenKeyword}</a> 
+{{/if}}
+        <span class="num">
+            <span class="${txtClass}">${txtVal}</span>
+            <span class="${rankClass}">${rankVal}</span>
+        </span>
+    </li>
+</script>
+<script id="myKeywordTemplate" type="text/x-jQuery-tmpl">
+    <li>
+        <a href="javascript:indolotte.front.ec.search.search_header.doKeywordSearch('${query}');" class="keyword">${mykeyword}</a>
+        <!--
+			<span class="num">${mykeywordDt} <button type="button" class="btn_del_s" onclick="indolotte.front.ec.search.search_header.removeMyKeyword(event, '${myKeywordFull}');">Delete</button></span>
+		-->
+    </li>
+</script>
+<script id="myKeywordDefaultTemplate" type="text/x-jQuery-tmpl">
+    <li>
+        <a href="javascript:;" class="keyword">no keyword</a>
+    </li>
+</script>
+<form name="popkeywordFrm" id="popkeywordFrm" > 
+    <input type="hidden" name="target" value='popword' /> 
+    <input type="hidden" name="collection" value='_ALL_' /> 
+    <input type="hidden" name="range" value='day' /> 
+</form>
+<form name="suddenKeywordFrm" id="suddenKeywordFrm" >
+    <input type="hidden" name="target" value='suddenkeyword' /> 
+</form>
+<form name="arkFrm" id="arkFrm" >
+    <input type="hidden" name="target" value='' /> 
+    <input type="hidden" name="query" value='' /> 
+    <input type="hidden" name="convert" value='fw' /> 
+    <input type="hidden" name="charset" value='utf-8' /> 
+</form>                   
+                            <div class="search_box" id="searchArea">
+<form name="searchHeaderForm" id="searchHeaderForm" action="/se/search.do">
+    <input type="hidden" name="pageIndex" value='1' /> 
+    <input type="hidden" name="quantityPerPage" value='36' /> 
+    <input type="hidden" name="themeType" value='ec' /> 
+    <input type="hidden" name="exhibitionType" value='EC_YN:contains:Y' /> 
+    <input type="hidden" name="mallNo" value="" /> 
+    <input type="hidden" name="sllrNo" value="" /> 
+    <input type="hidden" name="mallName" value="" /> 
+    <input type="hidden" name="mallMainNo" value=""/>
+    <input type="hidden" name="mallNoExclude" value=""/>
+    <input type="hidden" name="lmiSellerNo" value="" />
+    <input type="hidden" name="showAllIlotteProduct" value="true"  />
+                                <legend>Search</legend>
+                                <div class="search_input">
+                                    <!-- <div class="select_ui" id="selectMallBox">
+                                        <button type="button" class="selected_txt" id="selectedMallName" value=""></button>
+                                        <div class="poplayer_wrap">
+                                            <ul id="mallUL">
+                                            </ul>
+                                        </div>
+                                    </div> --> 
+                                    <input type="search" name="query" id="headerQuery" title="Please enter search words" placeholder="Apa yang kamu cari hari ini?"  onclick="javascript:indolotte.front.ec.search.search_header.makeHeader()" onKeypress="javascript:indolotte.front.ec.search.search_header.pressCheckHeader((event),this);" autocomplete="off">
+                                    <button type="button" class="btn_search" onClick="javascript:indolotte.front.ec.search.search_header.doHeaderSearch();">Search</button>
+
+                                    <div id="viewsrch_keyword1" class="top_search_keywordlayer" style="display:none;">
+                                        <p class="keywords_result" id="displayQuery"></p>
+                                        <div class="keywords_listbox_wrap">
+                                            <div class="keywords_listbox" id="srch_ark">
+                                            </div>
+                                            <div class="keywords_listbox">
+                                                <strong class="tit_ad"><span>Iklan</span></strong>
+	                                            <ul class="list_words_ad" id="ads_area_01">
+	                                            </ul>
+                                            </div>
+                                        </div>
+                                        <div class="keywords_btn_wrap" id="recommendCategory_area">
+                                        </div>
+                                    </div>
+
+                                    <div id="viewsrch_keyword2" class="top_search_keywordlayer" style="display:none;">
+                                        <div class="keywords_tab_wrap">
+                                            <div class="keywords_tab" data-ecm-function="tab" data-ecm-tabname="fn_tab_kwds">
+                                                <a href="#tab_cont_kwds1" class="on">Terakhir</a>
+                                                <a href="#tab_cont_kwds2">Populer</a>
+                                                <a href="#tab_cont_kwds3">Trending</a>
+                                            </div>
+                                        </div>
+                                        <div class="keywords_listbox_wrap">
+                                            <div class="keywords_listbox">
+                                                <!-- Recent -->
+                                                <div id="tab_cont_kwds1" class="tab_cont" data-ecm-tabname="fn_tab_kwds">
+                                                    <ul class="list_words" id="mykeyword_area">
+                                                    </ul>
+                                                </div>
+                                                <!-- //Recent -->
+
+                                                <!-- Popular -->
+                                                <div id="tab_cont_kwds2" class="tab_cont hide" data-ecm-tabname="fn_tab_kwds">
+                                                    <ul class="list_words" id="popkeyword_area">
+                                                    </ul>
+                                                </div>
+                                                <!-- //Popular -->
+
+                                                <!-- Rising -->
+                                                <div id="tab_cont_kwds3" class="tab_cont hide" data-ecm-tabname="fn_tab_kwds">
+                                                    <ul class="list_words" id="suddenkeyword_area">
+                                                    </ul>
+                                                </div>
+                                                <!-- //Rising -->
+                                            </div>
+                                            <div class="keywords_listbox">
+                                                <strong class="tit_ad"><span>Iklan</span></strong>
+                                                <ul class="list_words_ad" id="ads_area_02">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+</form>
+                            </div>
+                            
+                            
+                        <div class="top_banner" id="layoutTopBanner">
+                            
+                        </div>
+                        </fieldset>
+                        <!-- search -->
+                    </div> 
+                    
+	                <div class="digital__link">
+	                    <div class="digital__wrapper">
+	                        <div class="hamburger_menu">
+	                            <button class="hamburger_btn"></button>
+	                            <span class="hamburger_menu_text">Categories</span>
+	                        </div>
+	                        <ul class="digital__list">
+	                            <li><a href="/brandmall/list.do" onclick="indolotte.front.ec.display.common.moveBrandMall(); return false;"><span class="digital__icon digi-bmall"><img src="/static-root/images//common/digital-icon/Group_99.png"></span><strong>Brand Mall</strong></a></li>
+	                            <li><a href="/promo-tv-homeshopping-best-seller-lejel-000000114994.do" onclick="indolotte.front.ec.display.common.moveTvShopping(); return false;"><span class="digital__icon digi-tvShop"><img src="/static-root/images//common/digital-icon/television.png"></span><strong>TV Home Shopping Best</strong></a></li>
+                                <li><a href="/di/displayView/pulsa.do" onclick="indolotte.front.ec.display.common.movePulsa(); return false;"><span class="digital__icon digi-pulsa"><img src="/static-root/images//common/digital-icon/smartphone.png"></span><strong>Pulsa</strong></a></li>
+	                            <li><a href="/ev/listOfEvent.do" onclick="indolotte.front.ec.display.common.moveEvent(); return false;"><span class="digital__icon digi-promo"><img src="/static-root/images//common/digital-icon/shopping-bag.png"></span><strong>Promo</strong></a></li>
+	                            <li><a href="/promo-k-wave-festival-000000125421.do" onclick="indolotte.front.ec.display.common.moveKWave(); return false;"><span class="digital__icon digi-kwave"><img src="/static-root/images//common/digital-icon/kwave.png"></span><strong>K-Wave Event</strong></a></li>
+	                            <li><a href="/promo-ilotte-free-000000125420.do" onclick="indolotte.front.ec.display.common.moveiLotteFree(); return false;"><span class="digital__icon digi-ilotte"><img src="/static-root/images//common/digital-icon/Group_762.png"></span><strong>iLOTTE Free</strong></a></li>
+	                            
+	                        </ul>
+	                    </div>
+	                </div>                   
+                </div>
+                
+                <div id="hamburgermenu" class="sub">
+                    <div id="ham_wrap">
+                        <div class="tap_top">
+                            <ul>
+                                <li class="on"><a href="#" onclick="return false;" id="mallinmallName">LOTTE Mart</a></li>
+                                <li><a href="#" onclick="return false;">iLOTTE</a></li>
+                            </ul>
+                        </div>
+                       
+                        <div class="tap_unit" id="mallInMallCategoryAll">
+                            <div class="ham_box">
+                                <ul class="ham_menu" id="mallInMall1Depth">
+                                
+                                </ul>
+                                <div class="category_group" id="mallInMall_category_group">
+                                
+                                </div>
+                            </div>
+                            <div class="banner_leftbox" id="mallinmallCategoryBottom">
+                                
+                            </div>
+                        </div>
+                        <div class="tap_unit" id="iLotteCategoryAll">
+                            <div class="ham_box">
+                                <ul class="ham_menu" id="iLotte1Depth">
+                                
+                                </ul>
+                                <div class="category_group" id="ilotte_category_group">
+                                
+                                </div>
+                            </div>
+                            <div class="banner_leftbox" id="position000010191_192">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_adbanner" id="position000010188">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+                <script id="slot000010257" type="text/x-jQuery-tmpl"> 
+                    <div class="top_popbanner">
+                        <a href="javascript:return false;" onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"
+ alt="${imgMetaAlt}" title="${imgMetaAlt}"></a>
+                        <button type="button" class="btn_close">Close</button>
+                    </div>    
+                </script>
+                <script id="mallCate1" type="text/x-jQuery-tmpl">
+                                    {{each(i, ob) obj}}      
+                                    <li categoryType="1">
+                                        <a href="${indolotte.front.ec.display.common.getCategorySEOURL(ob.categoryName, ob.categoryNumber, ob.displayMallCode)}">
+                                            {{if ob.categoryImageURLAddressEC != null}}
+                                            <span class="img_wrap"><div class="img_wrap white">
+                                            <img src="${ob.categoryImageURLAddressEC}" alt="icon" />
+                                            </div></span>
+                                            {{/if}}
+                                            ${ob.categoryName}
+                                        </a>
+                                    </li>
+                                    {{/each}}                  
+                </script>
+                <script id="mall_cate_inner" type="text/x-jQuery-tmpl">
+                                    {{each(i, ob) obj}}  
+                                    <div class="con_category">                                        
+                                        <div class="category_warp">
+                                            <div class="cartegory_tit">
+                                                <a href="${indolotte.front.ec.display.common.getCategorySEOURL(ob.categoryName, ob.categoryNumber, DISPLAY_MALL_CODE)}">${ob.categoryName} <span class="btn_ico ico31 right"></span></a>
+                                            </div>
+                                            
+                                            <div class="category_lists" id="cate_${ob.categoryNumber}">
+                                                <button class="scroll_button_wrap top"><span class="plus_button2"></span></button>
+                                                <button class="scroll_button_wrap bottom"><span class="plus_button3"></span></button>
+                                                <div class="move_wrap">
+                                                <div class="category_list">
+                                                   
+                                                </div>
+                                                <div class="category_list">
+                                                    
+                                                </div>
+                                                <div class="category_list">
+                                                    
+                                                </div>
+                                                <div class="category_list">
+                                                    
+                                                </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>                                        
+                                        <div class="brandmall_wrap mallinmallBrand">
+                                            <p>BRAND MALL</p>
+                                            
+                                        </div>
+                                        <div class="banner_right">
+                                            <a href="javascript:"><img src="/static-root/images/common/banner_lottemart.png" alt="banner" /></a>
+                                        </div>
+                                    </div>  
+                                    {{/each}}             
+                </script>
+                <script id="cate1" type="text/x-jQuery-tmpl">
+                                    {{each(i, ob) obj}}      
+                                    <li class="white" categoryType="2">
+                                        <a href="${indolotte.front.ec.display.common.getCategorySEOURL(ob.categoryName, ob.categoryNumber, ob.displayMallCode)}">
+                                            <span class="img_wrap"><div class="img_wrap white">
+                                            {{if i == 0}}
+                                            <img src="/static-root/images/common/gnb_ico_01.png" alt="icon" />
+                                            {{else i == 1}}
+                                            <img src="/static-root/images/common/gnb_ico_02.png" alt="icon" />                                            
+                                            {{else i == 2}} 
+                                            <img src="/static-root/images/common/gnb_ico_03.png" alt="icon" />
+                                            {{else i == 3}}
+                                            <img src="/static-root/images/common/gnb_ico_04.png" alt="icon" />
+                                            {{else i == 4}}
+                                            <img src="/static-root/images/common/gnb_ico_05.png" alt="icon" />                                            
+                                            {{else}}
+                                            <img src="/static-root/images/common/gnb_ico_06.png" alt="icon" />
+                                            {{/if}}   
+                                            </div></span>                                         
+                                            ${ob.categoryName}
+                                        </a>
+                                    </li>
+                                    {{/each}}                  
+                </script>
+                <script id="cate_inner" type="text/x-jQuery-tmpl">
+                                    {{each(i, ob) obj}}  
+                                    <div class="con_category">                                        
+                                        <div class="category_warp">
+                                            <div class="cartegory_tit">
+                                                <a href="${indolotte.front.ec.display.common.getCategorySEOURL(ob.categoryName, ob.categoryNumber, ob.displayMallCode)}">${ob.categoryName} <span class="btn_ico ico31 right"></span></a>
+                                            </div>
+                                            
+                                            <div class="category_lists" id="cate_${ob.categoryNumber}">
+                                                <button class="scroll_button_wrap top"><span class="plus_button2"></span></button>
+                                                <button class="scroll_button_wrap bottom"><span class="plus_button3"></span></button>
+                                                <div class="move_wrap">
+                                                <div class="category_list">
+                                                   
+                                                </div>
+                                                <div class="category_list">
+                                                    
+                                                </div>
+                                                <div class="category_list">
+                                                    
+                                                </div>
+                                                <div class="category_list">
+                                                    
+                                                </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>                                        
+                                        <div class="brandmall_wrap" id="${"position000010" + (205+i)}">
+                                            <p>BRAND MALL</p>
+                                            
+                                        </div>
+                                    </div>  
+                                    {{/each}}             
+                </script>
+                
+                <script id="slot000010188" type="text/x-jQuery-tmpl">
+                    <a href="#"  onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"
+ alt="${imgMetaAlt}" title="${imgMetaAlt}" /></a>                                      
+                </script>
+                <script id="slot000010192" type="text/x-jQuery-tmpl">
+                    <a href="#"  onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false" class="hamboth_a"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"
+ alt="${imgMetaAlt}" title="${imgMetaAlt}" /></a>                                      
+                </script>
+<div id="channelVoucherArea" class="channel-voucher" style="width:400px; margin:auto; display:none;">
+    <i class="popup-adv__close" onclick="indolotte.front.pm.Common.requestRemoveChannelSession();$.fancybox.close();"></i>
+    <div id="channelVoucherListArea"></div>
+    <div class="t_center">
+        <div class="btn_wrap t_center mgt20" id="issuedYesChannelVoucherArea" style="display:none;">Kode voucher telah digunakan. ​</div>
+        <div class="btn_wrap t_center mgt20" id="issuedNoChannelVoucherArea">
+            <button type="button" class="download_btn_type3" id="btn_issueChannelVoucher"><span>Gunakan Voucher</span></button>
+        </div>
+    </div>
+</div>
+<div id="MARKETING_CONFIRM_LAYER" class="popmodal_type1 dialog wsize_s" style="display:none;">
+    <div class="body">
+        <p class="dialog_msg" id="MARKETING_CONFIRM_MESSAGE_AREA"></p>
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small" id="BTN_MARKETING_CONFIRM_OK"><span>OK</span></button>
+            <button type="button" class="btn_type3 small" id="BTN_MARKETING_CONFIRM_CANCEL"><span>Cancel</span></button>
+        </div>
+    </div>
+</div>
+<div id="MARKETING_ALERT_LAYER" class="popmodal_type1 dialog wsize_s" style="display:none;">
+    <div class="body">
+        <p class="dialog_msg" id="MARKETING_ALERT_MESSAGE_AREA"></p>
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small" id="BTN_MARKETING_ALERT_OK"><span>OK</span></button>
+        </div>
+    </div>
+</div>
+<div id="EC-DI-0109" class="popmodal_type1" style="width:500px;display:none">
+    
+    <div class="body">
+        <div class="srchbox_type2_wrap">
+            <div class="mgb20 t_center">
+                Sorry.Coming Soon!
+            </div>
+        </div>
+
+    
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 big" onclick="$.fancybox.close(); return false;"><span>Confirm</span></button>
+        </div>
+    </div>
+    <button type="button" class="btn_modal_close" onclick="$.fancybox.close();">Close</button>
+</div>
+<script type="text/x-jquery-tmpl" id="tmpl_channelVoucherList">
+<!-- loop -->
+{{each(i, voucher) voucherList}}
+<div class="voucher-container mgb10 ${voucher.cssStyleType}">
+    <div class="voucher-container__images">
+        <i class="voucher-images__logo"></i>
+        <span>${voucher.title}</span>
+    </div>
+    <div class="voucher-container__body">
+        <div class="voucher-body__title">${voucher.voucherName}</div>
+        {{if !voucher.voucherAdditionalName || voucher.voucherAdditionalName == ""}}
+        <div class="no-vouchers-desc">
+        {{else}}
+        <div class="voucher-body__desc">${voucher.voucherAdditionalName}</div>
+        {{/if}}
+        {{if voucher.rateAmountApplyWayCode == "01"}}
+        <div class="voucher-body__price">
+            <div class="price--currencies">RP</div>
+            <div class="price--main">${voucher.benefitValue}</div>
+        </div>
+        {{else voucher.rateAmountApplyWayCode == "02"}}
+        <div class="voucher-body__discount">
+            <div class="discount--main">${voucher.benefitValue}</div>
+            <div class="discount--off">%</div>
+        </div>
+        {{else}}
+            <div class="no-vouchers-benefit"/>
+        {{/if}}
+        {{if !voucher.voucherAdditionalName || voucher.voucherAdditionalName == ""}}
+        </div>
+        {{/if}}
+        <div class="voucher-body__tnc">${voucher.applyCriterionMinimumOrderAmountDesc}</div>
+    </div>
+    <div class="voucher-container__footer">
+        <div class="voucher-footer__date">${voucher.usePeriodApplyDesc}</div>
+    </div>
+</div>
+{{/each}}
+<!-- //loop -->
+</script>
+<div id="COMMON_AJAX_LOADING_DIMM_LAYER" class="cssload-spin-box" style="display:none;"></div>
+
+<div class="martpopup_box">
+    <div class="representative only type03"><!-- type01 : close // type02 : open // type03 : content // -->
+        <div class="repr_head">
+            <div class="head_logo">
+                    <span class="icon_span"></span>
+                    Pilih Mart
+            </div>
+            <div class="head_info">
+                <p>
+
+                    Produk dan harga yang ditampilkan saat ini berdasarkan LOTTE Mart  <span class="font_color23">LOTTE Mart representatif</span>
+                </p>
+                <button type="button" class="btbox_close">Tutup</button>
+            </div>
+            <p class="head_txt">
+                Produk dan harga<br />yang ditampilkan saat ini<br />didasarkan pada<br />LOTTE Mart representatif
+            </p>
+            <button type="button" class="selection_btn">
+                <span></span>Pemilihan LOTTE Mart
+            </button>
+<!--             <button type="button" class="repr_open"></button> -->
+        </div>
+        <div class="repr_body"> <!-- Lotte Mart Selection -->
+        
+				<div class="img_delivery">
+					<img src="/static-root/images/icon/rightMark/food.png">
+				</div>
+				<div class="bodytext">
+					Untuk pengiriman Flash Delivery (menggunakan sepeda motor), mohon masukkan alamat pengiriman kamu. Saat ini Flash Delivery hanya dapat melayani radius 10km dari LOTTE Mart tertentu di Jakarta & Bintaro.
+				</div>
+				<div class="tit_hgroup_type6">
+                <h2 class="tit_h">Silahkan lengkapi alamat pengiriman untuk memilih Lotte Mart</h2>
+            </div>
+            <ul class="tit_select">
+                <li>
+                    <h4>Propinsi</h4>
+                    <select style="width:100%;" id="headerZipLevel_1" name="headerZipLevel_1">
+                        <option value="">Pilih</option>
+                    </select>
+                </li>
+                <li>
+                    <h4>Kota</h4>
+                    <select style="width:100%;" disabled="disabled" id="headerZipLevel_2" name="headerZipLevel_2">
+                        <option value="">Pilih</option>
+                    </select>
+                </li>
+                <li>
+                    <h4>Kecamatan</h4>
+                    <select style="width:100%;" disabled="disabled" id="headerZipLevel_3" name="headerZipLevel_3">
+                        <option value="">Pilih</option>
+                    </select>
+                </li>
+                <li>
+                    <h4>Kelurahan</h4>
+                    <select style="width:100%;" disabled="disabled" id="headerZipLevel_4" name="headerZipLevel_4">
+                        <option value="">Pilih</option>
+                    </select>
+                </li>
+                <input type="hidden" name="headerZipCode" id="headerZipCode" value="" />
+                <input type="hidden" name="headerSllrNo" id="headerSllrNo" value="" />
+                <input type="hidden" name="lottemartHeaderSllrNo" id="lottemartHeaderSllrNo" value="" />
+            </ul>
+            <div class="tit_hgroup_type6" id="positionMartListTitle" style="display:none">
+                <h2 class="tit_h" >Toko yang tersedia</h2>
+            </div>
+            <div class="mart_select" >    
+                <ul id="positionMartList" style="display:none">
+                    <li class="none">
+                        Maaf, lokasi kamu diluar jangkauan Flash Delivery kami.
+                    </li>
+                </ul>
+            </div>  
+            <div class="alert_type2">
+                <p class="notibox_t1">Silakan hubungi kami untuk informasi lebih rinci mengenai pengiriman. Jam operasional 08.00-17.00 WIB pada hari kerja.</p>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div id="partnerConfirm" class="popmodal_type1 dialog wsize_s" style="display:none;">
+    <div class="body">
+        <p class="dialog_msg">
+            Lokasi LOTTE Mart berhasil diubah.            
+        </p>
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small"><span>OK</span></button>
+        </div>
+    </div>
+    <button type="button" class="btn_modal_close" onclick="$.fancybox.close();">Tutup</button>
+</div>
+<script id="tmplMartList" type="text/x-jQuery-tmpl">
+    <li>
+        <span class="icon_house"></span>
+        ${partnerName} <span style="color:#999999;">${partnerAddress.substring(0,50)} {{if partnerAddress.length > 50}}...{{/if}}</span>
+        <button type="button" class="btn_type2 color03 disable" disabled onclick="indolotte.front.ec.display.common.partnerSet('${partnerNumber}');"><span>Select Mart</span></button>
+    </li>
+</script>
+    
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+	<style>
+	    [data-type=login] [data-content=signon] {display:none;}
+	    [data-type=signon] [data-content=login] {display:none;}
+	    [data-content=signon][data-content-step=step1] [data-content-step=step2] {display:none;}
+	    [data-content=signon][data-content-step=step2] [data-content-step=step1] {display:none;}
+
+		.login_wrap .banner_area .bx-wrapper .bx-pager{top:-30px; left: 40%; z-index: 190;}
+
+        .nationsel_wrap[data-lang-type=in] .nation_selected[data-lang-type=en] {display:none;}
+        .nationsel_wrap[data-lang-type=en] .nation_selected[data-lang-type=in] {display:none;}
+	</style>
+
+    <script type="text/javascript" src="/javascript/message/me_in.js"></script>
+	<script type="text/javascript" src="/static-root/js/me/login/loginForm.775.js"></script>
+
+    <div id="container">
+        <div id="contents">
+            <div class="location">
+                <li><span class="home"><a href="/">Home</a></span></li>
+                <li><span><a href="#">Login</a></span></li>
+            </div>
+            <!-- Start Edit -->
+            <div class="login_wrap" data-type="login">
+                <div class="tab_wrap">
+                    
+                    <!-- START 20170816 -->
+                    <div class="login_top_logo">
+                        <img src="/static-root/images/common/login_top_logo.png" alt="login top image">
+                    </div>
+                    
+                    
+                    <div class="nationsel_wrap" data-lang-type="ko">
+                        <div class="checked_box">
+                            <a href="javascript:;" class="nation_selected" data-lang-type="in">
+                               <span class="nation_in"></span>ID
+                            </a>
+                            <a href="javascript:;" class="nation_selected" data-lang-type="en">
+                               <span class="nation_en"></span>EN
+                            </a>
+                        </div>
+                        <ul class="sel_nation">
+                            <li><a href="javascript:;" data-lang="en"><span class="nation_en"></span>EN</a></li><!-- 옵션 국기 -->
+                            <li><a href="javascript:;" data-lang="in"><span class="nation_in"></span>ID</a></li><!-- 옵션 국기 -->
+                        </ul>
+                    </div>
+                    
+                    <div class="tab_type1_wrap mgb0">
+                        <ul class="tab_type1" data-ecm-function="tab" data-ecm-tabname="fn_tab1">
+                            <li class="on">
+                                <a href="#tab_cont01" class="tab_in">
+                                    <span class="tab_in_txt on">Login</span>
+                                    <span class="tab_in_txt off">Sudah memiliki akun?  <span class="font_color01 uline">Login di sini</span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab_cont02" class="tab_in">
+                                    <span class="tab_in_txt on">Daftar</span>
+                                    <span class="tab_in_txt off">Pengguna baru?  <span class="font_color01 uline">Daftar di sini</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab_cont_wrap">
+                        <!-- 2017-08-11 기획변경 -->
+                        <!-- LOGIN -->                                    
+                        <div id="tab_cont01" class="tab_cont" data-ecm-tabname="fn_tab1">
+                            <div class="member_wrap type2">
+                                <div class="login_area type2">
+                                    <div class="tit">Login via akun iLOTTE</div>
+	                                <form name="loginForm" action="loginProcess.do" method='post'>
+	                                    <input type="hidden" name="redirectUrl" value="" />
+	                                    <input type="hidden" name="_csrf" value="6438e9f7-447a-43ca-81a2-d21884d1b7bb" />
+	                                    <div class="wrtform_type2">
+	                                        <div class="row">
+	                                            <div class="cell_header"><label for="userid" class="txt_label">Email/No Telepon</label></div><!-- 2017.0210 : 수정 -->
+	                                            <div class="cell">
+	                                                <input type="text" id="userid" class="text" title="Email/No Telepon" name="userid" value=""/>
+	                                                <div class="mgt5">
+	                                                    <span class="checkbox"><input type="checkbox" id="js_chkEmailSave" name="checkEmailSave" checked="checked"><label for="js_chkEmailSave">Ingat Email/No Telepon Saya</label></span>
+	                                                </div>
+	                                                <span style="width:0px;height:0px;font-size:0;margin:0px;padding:0px;position:fixed;left:-9999px;top:-9999px;visibility:hidden;">
+	                                                   <input type="checkbox" id="inp_chk_remember_me" name="remember_me" value="true" checked="checked"/>
+	                                                </span>
+	                                            </div>
+	                                        </div>
+	                                        <div class="row">
+	                                            <div class="cell_header"><label for="password" class="txt_label">Password</label></div>
+	                                            <div class="cell">
+	                                                <input type="password" id="password" class="text" title="Password" name="password" value="" autocomplete="off"/>
+	                                                <div class="mgt10"><a href="/me/service/findMemberPassword.do" class="uline font_color05">Lupa password?</a></div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="btn_wrap">
+	                                        <button type="submit" id="btnLogin" class="btn_type1 large">
+	                                            <span>Login</span><!-- 2017.02.10 : 수정 -->
+	                                        </button>
+	                                    </div>
+                                    </form>
+                                </div>
+                                
+                                <!-- 20170602 : 수정 -->
+                                <div class="right_sns_login">
+                                    <div class="tit">Login via Media Sosial/Partner</div>
+                                    <div class="facebook">
+                                        <a href="javascript:;" class="btnSnsLogin" data-sns="facebook">
+                                            <span class="logo">logo</span>
+                                            <p>Facebook</p>
+                                        </a>
+                                    </div>
+                                    <div class="google">
+                                        <a href="javascript:;" class="btnSnsLogin" data-sns="google">
+                                            <span class="logo">logo</span>
+                                            <p>Google</p>
+                                        </a>
+                                    </div>
+                                    <div class="lpoint">
+                                        <a href="javascript:;" class="btnSnsLogin" data-sns="lpoint">
+                                            <span class="logo">logo</span>
+                                            <p>L.POINT</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- // 20170602 : 수정 -->
+                                
+                            </div>
+                        </div>
+                        <!-- // LOGIN -->
+                        <!-- SIGN UP -->
+                        <div id="tab_cont02" class="tab_cont hide" data-ecm-tabname="fn_tab1">
+                            <div class="member_wrap type2">
+                                <div class="login_area type2">
+                                    <div class="tit">Pendaftaran akun iLOTTE</div>
+                                    <form name="memberRegistrationForm" class="memberRegistrationForm" method="POST" action="/me/registration/memberCreateAccountProcess.do">
+                                        <input type="hidden" name="_csrf" value="6438e9f7-447a-43ca-81a2-d21884d1b7bb"/>
+	                                    <div class="wrtform_type2">
+	                                        <div class="row">
+	                                            <div class="cell_header">
+	                                                <label for="name" class="txt_label">Nama</label>
+	                                                <span class="astar">*</span><!-- 2017.02.10 : 추가 -->
+	                                            </div>
+	                                            <div class="cell">
+	                                                <input type="text" id="name" name="name" class="text" maxLength="51"  autocomplete="off" style="width:238px !important">
+	                                            </div>
+	                                        </div>
+	                                        <div class="row">
+	                                            <div class="cell_header">
+	                                                <label for="loginId" class="txt_label">Email</label>
+	                                                <span class="astar">*</span><!-- 2017.02.10 : 추가 -->
+	                                            </div>
+	                                            <div class="cell">
+	                                                <input type="email" id="loginId" name="loginId" class="text" maxLength="101"  autocomplete="off" style="width:238px !important">
+	                                            </div>
+	                                        </div>
+	                                        <div class="row">
+	                                            <div class="cell_header">
+	                                                <label for="password" class="txt_label">Password</label>
+	                                                <span class="astar">*</span><!-- 2017.02.10 : 추가 -->
+	                                            </div>
+	                                            <div class="cell">
+	                                                <input type="password" id="password" name="password" class="text" maxLength="129" autocomplete="off" style="width:238px !important">
+	                                                <!-- 2017.02.10 : 추가 -->
+	                                                <p class="font_size01 pd0">Password kamu harus terdiri dari 10 hingga 16 alphanumerik karakter.</p>
+	                                                <!-- //2017.02.10 : 추가 -->
+	                                            </div>
+	                                        </div>
+	                                        <div class="row">
+	                                            <div class="cell_header">
+	                                                <label for="passwordAgain" class="txt_label">Konfirmasi Password</label>
+	                                                <span class="astar">*</span><!-- 2017.02.10 : 추가 -->
+	                                            </div>
+	                                            <div class="cell">
+	                                                <input type="password" id="passwordAgain" name="passwordAgain" class="text"  autocomplete="off" style="width:238px !important">
+	                                            </div>
+	                                        </div>
+	                                        <div class="row">
+	                                            <div class="cell_header">
+	                                                <label for="inp_pw" class="txt_label">Jenis Kelamin</label>
+	                                                <span class="astar">*</span><!-- 2017.02.10 : 추가 -->
+	                                            </div>
+	                                            <div class="cell">
+	                                                <span class="radio">
+	                                                    <input type="radio" id="genderCode01" name="genderCode" value="01">
+	                                                    <label for="genderCode01">Pria</label>
+	                                                </span>
+	                                                <span class="radio">
+	                                                    <input type="radio" id="genderCode02" name="genderCode" value="02">
+	                                                    <label for="genderCode02">Wanita</label>
+	                                                </span>
+	                                            </div>
+	                                        </div> 
+	                                    </div>
+	                                    <div class="btn_wrap">
+	                                        <button id="BtnCreateAccount" type="submit" class="btn_type1 large">
+	                                            <span>Buat Akun</span>
+	                                        </button>
+	                                    </div>
+	                                    <div class="reg_link">
+					                        Dengan mengklik 'Buat Akun', <br /> Saya telah menyetujui <span class="font_color01 uline"><a href="javascript:;" class="js_LinkTermsAndConditions">Syarat &amp; Ketentuan</a></span> dan <span class="font_color01 uline"><a href="javascript:;" class="js_LinkPrivacyPolicy">Kebijakan Privasi</a></span> iLOTTE
+					                    </div>
+                                    </form>
+                                </div>
+                                
+                                <!-- 20170602 : 수정 -->
+                                <div class="right_sns_login">
+                                    <div class="tit">Login via Media Sosial/Partner</div>
+                                    <div class="facebook">
+                                        <a href="javascript:;" class="btnSnsLogin" data-sns="facebook">
+                                            <span class="logo">logo</span>
+                                            <p>Facebook</p>
+                                        </a>
+                                    </div>
+                                    <div class="google">
+                                        <a href="javascript:;" class="btnSnsLogin" data-sns="google">
+                                            <span class="logo">logo</span>
+                                            <p>Google</p>
+                                        </a>
+                                    </div>
+                                    <div class="lpoint">
+                                        <a href="javascript:;" class="btnSnsLogin" data-sns="lpoint">
+                                            <span class="logo">logo</span>
+                                            <p>L.POINT</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- // 20170602 : 수정 -->
+                                
+                            </div>
+                        </div>
+                        <!-- 2017-08-11 기획변경 -->
+                    </div>
+                
+                </div>
+            </div>
+            <!-- //End Edit -->
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+
+<div class="ft_banner_area" id="position000010430">
+
+</div>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script type="text/javascript">
+var recaptchaPW;
+var recaptchaSMS;
+
+	function onloadCallback() {
+		if($("#recaptcha").length > 0){
+			recaptchaPW = grecaptcha.render('recaptcha', {
+				'sitekey' : '6LfkF0AUAAAAAIzCbvyHp4BcHSEdRlHyTLE3rcox', //Replace this with your Site key
+				'theme' : 'light',
+				callback : function(response) {
+					$("#memberServiceFindPasswordForm [name=recaptchaResponse]")
+							.val(response);
+					$("#BtnSendEmail").prop("disabled", false);
+				}
+			});
+		}
+
+		//Render the recaptcha2 on the element with ID "recaptcha2"
+		recaptchaSMS = grecaptcha.render('recaptchaSMS',{
+		    'sitekey' : '6LfkF0AUAAAAAIzCbvyHp4BcHSEdRlHyTLE3rcox', //Replace this with your Site key
+		    'theme' : 'light',
+		    callback : function(res){
+		        $("#appDownloadSMSBtn").prop("disabled", false);
+		    }
+	    });
+	}
+	function googleRecapcharOnSubmit() {
+		indolotte.front.ec.display.navigator.clickAppDownloadSMSBtn();
+	}
+	
+	$(document).ready(function(){	
+		   scroll_btntop();
+		   
+		   getbsid();
+	})
+</script>
+<script type="text/javascript" src="/static-root/js/cs/CustomerCenter.navigator.js"></script>
+<script id="slot000010430" type="text/x-jQuery-tmpl">
+    <a href="javascript:return false;" onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img class="lazy-expressImageBanner" data-original="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"  alt="${imgMetaAlt}" title="${imgMetaAlt}" /></a>
+
+</script>
+
+<!-- 2017-05-04_푸터 -->
+<div id="footer">
+    <div class="footer_dv_tbar">
+        <div class="foot_logo"><img src="/static-root/images/common/footer_logo.png" alt="ILOTTE"></div>       
+    </div>
+    <div class="footer_dv_con">
+        <div class="footer_innr">
+            <ul>
+                <li>
+                    <div class="foot_links">
+                        <h4><strong class="tit">Info Perusahaan​</strong></h4>
+                        <ul>
+                            <li><a href="/cp/companyIntroduce/viewIlotte.do">Tentang iLOTTE</a></li>
+                            <li><a href="https://recruit.ilotte.me/" target="_blank">Karir</a></li>
+                            <li><a href="/cp/companyIntroduce/daftar-brand.do">Daftar Brand</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="foot_links">
+                        <h4><strong class="tit">Customer Service</strong></h4>
+                        <ul>
+                            <li><a href="/cs/OneToOneInquiry/viewRegist.do">Email Us</a></li>
+                            <li>
+                                
+                                 <a href="javascript:;" class="lay_txt" 
+                                    onclick="javascript:indolotte.cs.CustomerCenter.navigator.showZendeskLiveChat();">Live Chat</a>
+                            </li>
+                            <li><a href="/cs/FAQ/viewFAQ.do">FAQ</a></li>
+                            <li><a href="/me/information/oauth/memberInformationView.do">Newsletter</a></li>
+                            <li>
+                                <div class="footer_cs_phone" ></div>
+                                <strong class="tit"><b>1 500 757</b></strong>
+                            </li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="foot_links">
+                        <h4><strong class="tit">Cara Cerdas Berbelanja</strong></h4>
+                        <ul>
+                            <li><a href="/cp/companyIntroduce/viewShoppingBenefits.do">Fitur Special</a></li>
+                            <li><a href="/cp/companyIntroduce/viewWishListAndShoppingCart.do">Cara Pesan &amp; Bayar</a></li>
+                            <li><a href="/cp/companyIntroduce/viewShippingType.do">Pengiriman</a></li>
+                            <li><a href="/cp/companyIntroduce/viewReturnYourItem.do">Pengembalian Produk &amp; Dana</a></li>
+                            <li><a href="/cp/companyIntroduce/viewSmartMembership.do">Smart Membership</a></li>
+                            <li><a href="/cp/companyIntroduce/viewIPoint.do">iPoint</a></li>
+                            <li><a href="/cp/companyIntroduce/viewLPoint.do">L.POINT</a></li>
+                            <!-- Rrmove social wishlist 26/08/2019 -->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="foot_links">
+                        <h4><strong class="tit">Partnership dengan iLOTTE</strong></h4>
+                        <ul>
+                            <li><a href="/vd/partnerApplication/viewRegist.do">Menjadi Partner iLOTTE</a></li>
+                            <li><a href="/vd/partnerApplication/viewPartnershipInquiryLogin.do">Rincian Permohonan Partnership</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot_links mgt35">
+                        <h4><strong class="tit">Kebijakan</strong></h4>
+                        <ul>
+                            <li><a href="/me/service/terms.do">Syarat dan Ketentuan</a></li>
+                            <li><a href="/me/service/privacyPolicy.do">Kebijakan Privasi</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="foot_sns_wrap">
+                        <ul class="foot_isns">
+                            <li><a href="https://www.facebook.com/ilotte.id/" class="i_url" rel="noreferrer" target="_blank"><span class="hidden">URL</span></a></li>
+                            <li><a href="https://twitter.com/iLOTTE_id" class="i_google" rel="noreferrer" target="_blank"><span class="hidden">Google+</span></a></li>
+                            <li><a href="https://www.instagram.com/ilotte_id/" class="i_facebook" rel="noreferrer" target="_blank"><span class="hidden">Facebook</span></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCl2FGLm909ZLEP8KIbXKLAA" rel="noreferrer" class="i_pinterest" target="_blank"><span class="hidden">Pinterest</span></a></li>
+                        </ul>
+                        <div class="foot_appstore">
+                            <a href="#" rel="noreferrer" class="i_appstore" target="_blank" onclick="return false;"><span class="hidden">App Store</span></a>
+                            <a href="#" rel="noreferrer" class="i_googleplay" target="_blank" onclick="return false;"><span class="hidden">Google Play</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+<style>
+.seoFooter {width: 1200px;margin: 0 auto; padding: 50px 0;text-align: justify;text-justify: inter-word;}
+@media screen and (max-width: 1200px) {
+  .seoFooter {width: 960px;}
+}
+</style>
+
+
+    
+    <div class="footer_dv_address">
+        <address class="footer_innr">           
+            <p></p>
+            <p class="copyright">Copyright © 2017 PT Indo Lotte Makmur. All Right Reserved.</p>
+            <ul class="alliance f_right">
+                <li><img src="/static-root/images/common/foot_alliance_01.png" alt="" /></li>
+                <li><img src="/static-root/images/common/foot_alliance_02.png" alt="" /></li>
+                <li><img src="/static-root/images/common/foot_alliance_03.png" alt="" /></li>
+                <li><img src="/static-root/images/common/foot_alliance_04.png" alt="" /></li>
+            </ul>          
+        </address>    
+    </div>
+</div>
+
+<div id="appDownloadSMSPopupLayer" class="popmodal_type1" style="width:346px; display:none;">
+    <div class="head">
+        <h2 class="head_tit">Kirim Link iLOTTE App melalui SMS</h2>
+    </div>
+    <div class="body">
+        <div class="main_adownp_wrap">
+            <div class="main_adownp_qp">
+                <img id="imgQRAppDownLoad" src="/static-root/images/temp/temp_app_down_qr.png" alt="" />
+            </div>
+            <div class="main_adown_p1">
+                <p class="p1">Silakan masukkan nomor handphone untuk mengunduh</p>
+                <input type="hidden" id="appDownloadSMSTypeOfOS" />
+                <input type="text" class="text" value=""
+                    id="appDownloadSMSPhoneNumber" maxlength="13"
+                    placeholder="Masukkan nomor handphone kamu tanpa menggunakan ‘ - ’" style="width:304px;" />
+                <p class="snote error" type="smsErrorMessage" id="smsErrorMessage_number" style="display:none;">Silakan masukkan angka.</p>
+                <p class="snote error" type="smsErrorMessage" id="smsErrorMessage_noinput" style="display:none;">Masukkan nomor ponsel kamu.</p>
+                <p class="snote error" type="smsErrorMessage" id="smsErrorMessage_error" style="display:none;">Maaf. SMS gagal terkirim dikarenakan eror.</p>
+<!--                 <p class="p2">Telcomsel</p> -->
+            </div>
+        </div>
+        <div id='recaptchaSMS' style="margin-top:5px;"></div>
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small" id="appDownloadSMSBtn" disabled=true><span>Kirim</span></button>
+            <button type="button" class="btn_type1 small color01" onclick="$.fancybox.close();"><span>Batal</span></button>
+        </div>
+    </div>
+    <button type="button" class="btn_modal_close" onclick="$.fancybox.close();"><span>Tutup</span></button>
+</div>
+
+<div id="fancy17" class="popmodal_type1" style="width:550px; display:none;">
+    <div class="body">
+        <div class="srchbox_type2_wrap">
+            <div class="mgb20 t_center">
+            Pelanggan di bawah usia 17 tahun tidak diperbolehkan untuk membeli produk ini.<br/><strong>Apakah kamu berusia 17 tahun ke atas?</strong>    
+            </div>
+        </div>
+
+    
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small color01" onclick="$.fancybox.close();"><span>Tidak, saya berusia di bawah 17 tahun.</span></button>
+            <button type="button" class="btn_type1 small"><span>Ya, saya berusia di atas 17 tahun.</span></button>
+        </div>
+    </div>
+    <button type="button" class="btn_modal_close" onclick="$.fancybox.close();">Tutup</button>
+</div>
+<div id="fancy21" class="popmodal_type1" style="width:550px; display:none;">
+    <div class="body">
+        <div class="srchbox_type2_wrap">
+            <div class="mgb20 t_center">
+             Pelanggan di bawah usia 21 tahun tidak diperbolehkan untuk membeli produk ini.<br/><strong>Apakah kamu berusia 21 tahun ke atas?</strong>
+            </div>
+        </div>
+
+    
+        <div class="btn_wrap t_center">
+            <button type="button" class="btn_type1 small color01" onclick="$.fancybox.close();"><span>Tidak, saya berusia di bawah 21 tahun.</span></button>
+            <button type="button" class="btn_type1 small"><span>Ya, saya berusia di atas 21 tahun.</span></button>
+        </div>
+    </div>
+    <button type="button" class="btn_modal_close" onclick="$.fancybox.close();">Tutup</button>
+</div>
+<!-- Old MNA Popup has changed since 13/11/2018 -->
+<script id="expressMnaImageBanner" type="text/x-jQuery-tmpl"> 
+    <i class="popup-adv__close" id="todayMnaClose"></i>              
+    <a href="#" onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"  alt="${imgMetaAlt}" title="${imgMetaAlt}" id="mnaImg"/></a>
+</script>
+<!-- //Select Ordered Items LP -->
+<!-- Main Banner PopUp -->
+<div id="todayMnaPopup" class="popup-adv" style="display:none;">
+    <div class="popup-adv__wrapper" id="position000021271">
+    
+    </div>
+</div>
+<!-- Main Banner PopUp End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+(function(w) {
+	// global variables : for user objects
+	w.USER = {
+	    id: "_GUEST",
+	    name: "",
+	    emailHash : "efef3dc641776447221924dad0e21179",
+	    userSeq: "-1",
+	    gradeCd: "",
+	    isLoggedIn: false,
+	    genderCd: "",
+	    attentionMemberCd: "",
+	    defaultShortDistanceSellerNumber: "",
+        wishlistGroup: "",
+        joinInfTypCd: "",
+        loginLnkgSiteCd: "",
+        verifyEmailYNFlag: "",
+        verifyPhoneYNFlag: ""
+	};
+
+	w.pageEnv = {
+	    csrf: {
+	    	header_key: "X-CSRF-TOKEN",
+	        key: "_csrf",
+	        value: "6438e9f7-447a-43ca-81a2-d21884d1b7bb"
+	    }
+	};	
+})(window);
+
+
+function getCurrentUser() {
+    return USER;
+}
+
+var BNR_PATH = "https://dxclnrbvyw82b.cloudfront.net/"
+var PRD_IMG_PATH = "https://dxclnrbvyw82b.cloudfront.net/" + "images/product/web";
+var PRD_IMG_SIZE = {
+    40 : "_40",
+    60 : "_60",
+    80 : "_80",
+    176 : "_176",
+    180 : "_180",
+    230 : "_230",
+    285 : "_285",
+    320 : "_320",
+    304 : "_304",
+    422 : "_422",
+    800 : "_800"
+}
+</script>
+<script type="text/javascript" src="/javascript/message/cs_in.js"></script>
+<!-- 2017-03-16 수정 : 비로그인시 배너영역 추가 -->
+<div id="quick" class="on"><!-- 20140504 : mall_wrap 추가 시 몰인몰 스타일-->
+    <div class="quick_innr">
+        <a href="javascript:;" class="btn_open"></a>
+        <a href="javascript:;" class="btn_close"></a>       
+        <!-- iLotte -->
+        <div class="quick_myviews q_ilotte">
+            <!--
+            <div class="quick_logo"><img src="/static-root/images/common/logo_quick.png" alt="ILOTTE"></div>
+            -->
+            <div class="floting_banner" id="quickLogo">                
+                <a href="javascript:return false;" onclick="indolotte.front.ec.display.common.moveMain()" class="ilotte_bn" style="background:#4d4d4d;">
+                   <img src="/static-root/images/common/logo_ilotte_fl.png" alt="ILOTTE">
+                </a>                    
+            </div>            
+            <script id="slot000010189" type="text/x-jQuery-tmpl">                      
+                <a href="javascript:return false;" class="mall_bn" onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"  alt="${imgMetaAlt}" title="${imgMetaAlt}" /></a>
+            </script>
+            <ul class="quick_imenus">
+                <li>
+                    
+                        
+                        
+                            <a href="#" onclick="indolotte.front.ec.display.common.moveLogin(); return false;" class="i_mypage">Login</a>
+                        
+                                        
+                </li>
+                <li class="layer_ui">
+                <!-- 
+                <a href="#" onclick="indolotte.front.ec.display.common.moveDelivery(); return false;" class="i_deliv layer_ui_btn" id="quickDelivery">
+                 -->
+                    <a href="/op/mypage/mypageOrderList.do" id="mypage_lnb_order" class="i_deliv layer_ui_btn">
+                        Delivery 
+                        <span class="badge" id="quickCounterDelivery"><b></b></span>
+                    </a>
+                </li>
+                <li class="layer_ui">
+                    <a href="/op/cart/view.do" class="i_cart layer_ui_btn">
+                        Cart 
+                        <span class="badge" id="quickCounterCart"><b></b></span>
+                    </a>
+                </li>
+                <li class="layer_ui">
+                    <a href="/me/wishlistManagement/viewWishlist.do" class="i_wishlist layer_ui_btn">Wish List <span class="badge" id="quickCounterWishlist"><b></b></span></a>
+                </li>
+            </ul>
+            <div class="quick_con quick_history">
+                <strong class="quick_con_tit i_history">History</strong>
+                <div class="quick_con_box quick_favo">
+                    <ul id="productDetailQuickLayer" class="quick_his_slide ilotte">
+                    </ul>
+                    <div class="scroll_btns">
+                        <button type="button" class="btn_scr_up">Prev</button>
+                        <button type="button" class="btn_scr_down">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+<script type="text/javascript" src="/static-root/js/common/notice.js"></script>
+<script>
+    $(document).ready(function(){
+    	indolotte.common.notice.onSearch();
+    });
+</script>
+            <form name="paramForm" id="paramForm" method="post">
+                <input type="hidden" name="_csrf" value="6438e9f7-447a-43ca-81a2-d21884d1b7bb"/>
+            </form>
+            <div class="quick_con quick_notice" id="quickNotice">
+                <strong class="quick_con_tit i_notice">Notice</strong>
+                <div class="quick_con_box">
+                    <ul class="quick_noti_slide_notice" id="footerNoticeListLayer">
+                    </ul>
+                    <script id="footerNoticeList" type="text/x-jQuery-tmpl">
+                        {{if list == null || list == '' }}
+                        {{/if}}
+                        {{each list}}
+                            <li class="item" name="notice" seq="${bulletinBoardContentNumber}">
+                                <a href="javascript:indolotte.common.notice.linkNoticeInfo('${bulletinBoardContentNumber}');">${bulletinBoardContentTitle}</a>
+                            </li>
+                        {{/each}}
+                    </script>
+                    <div class="scroll_btns">
+                        <button type="button" class="btn_scr_up">Prev</button>
+                        <button type="button" class="btn_scr_down">Next</button>
+                    </div>
+                </div>
+            </div>                                             
+            <div class="quick_brand_bn" id="position000010428">
+                
+            </div>
+            <script id="slot000010428" type="text/x-jQuery-tmpl">                      
+                <a href="javascript:return false;" onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"  alt="${imgMetaAlt}" title="${imgMetaAlt}" /></a>
+            </script>
+            <div class="notice_icon">
+                <ul class="quick_imenus">
+                    <li><a href="javascript:;" class="i_mypage">Notice</a></li>
+                </ul>
+            </div>
+            <ul class="quick_imenus f_right single">
+                <li class="layer_ui">
+                    
+                    <a id="linkLiveChat" href="javascript:;" class="i_chat lay_txt" 
+                   		onclick="javascript:indolotte.cs.CustomerCenter.navigator.showZendeskLiveChat();">Live Chat</a>
+                    <!-- Chatting Main Layer -->
+                    <!-- Chatting Main Layer -->
+                    <!-- //Chatting Main Layer -->
+                </li>
+            </ul>
+        </div>
+        <!-- //iLotte -->
+        <a href="#skip" class="btn_top">TOP</a>
+        <!-- Floating Banner Begin -->
+        <script id="expressMnaSmallImageBanner" type="text/x-jQuery-tmpl"> 
+            <a href="#" onclick="indolotte.front.ec.display.common.moveBanner('${linkURLAddress}','${popupYNFlag}','${advertisementSlotYNFlag}','${categoryNumber}','${slotNumber}'); return false"><img src="${indolotte.front.ec.display.common.getBannerImageURL(bannerContents)}"  alt="${imgMetaAlt}" title="${imgMetaAlt}" id="mnaImg"/></a>
+	    </script>
+		<section class="floating-promo">
+		    <div class="floating-promo__content" id="position000021762">
+		        
+		    </div>
+		</section>
+		<!-- Floating Banner End -->
+    </div>
+</div>
+
+<div id="divChattingAlert" class="popmodal_type1 dialog wsize_s" style="display:none;">
+    <div class="body">
+        <p class="dialog_msg" id="divChattingAlertMessage">
+        </p>
+        <div class="btn_wrap t_center" id="divBtnTypeEmail" style="display:none;">
+            <button type="button" class="btn_type1 small" onclick="javascript:indolotte.cs.CustomerCenter.navigator.linkEmail();"><span>Email Us</span></button>
+            <button type="button" class="btn_type1 small" onclick="$.fancybox.close();"><span>Batal</span></button>
+        </div>
+        <div class="btn_wrap t_center" id="divBtnTypeErrorRefresh" style="display:none;">
+            <button type="button" class="btn_type1 small" onclick="$.fancybox.close();"><span>OK</span></button>
+        </div>
+    </div>
+    <button type="button" class="btn_modal_close" onclick="$.fancybox.close();">Tutup</button>
+</div>
+<!-- //2017-03-16 수정 : 비로그인시 배너영역 추가 -->
+
+</body>
+</html>
