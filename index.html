@@ -1,0 +1,147 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+    /* display: grid;
+	place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+}
+
+.container {
+    max-width: 640px;
+    /* background-color: aqua; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+    min-height: 540px;
+    background-color: #f2f2f2;
+    padding: 50px 100px 50px 50px;
+    text-align: justify;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #00000035;
+}
+.card .head {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.card .text {
+    font-size: 18px;
+}
+
+.img img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #00000035;
+    z-index: 1;
+    transform: translateX(-20%);
+    filter: grayscale(100%);
+    transition: all 200ms ease-in-out;
+}
+
+.img img:hover {
+    transform: translate(-20%, -5%) scale(1.02);
+    filter: grayscale(0%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #252525;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main{
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    position: relative;
+}
+.box1{
+    width: 30px;
+    height: 500px ;
+    background: linear-gradient(to left,#2CFFF2  , #1E78FF  , #FF54A6  , #FF6E1D    , #FF3E3E ,#2CFFF2);
+    background-size: 400%;
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 3%;
+    right: 23%;
+    border-radius: 25px;
+    animation: col 10s ease-in-out  infinite;
+}
+.box2{
+    width: 500px;
+    height: 30px ;
+    background: linear-gradient(to left,#2CFFF2  , #1E78FF  , #FF54A6  , #FF6E1D    , #FF3E3E ,#2CFFF2);
+    background-size: 400%;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 3%;
+    border-radius: 25px;
+    animation: col 10s ease-in-out  infinite;
+}
+.box3{
+    width: 500px;
+    height: 30px ;
+    background: linear-gradient(to left,#2CFFF2  , #1E78FF  , #FF54A6  , #FF6E1D    , #FF3E3E ,#2CFFF2);
+    background-size: 400%;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: 50%;
+    left: -23.5%;
+    border-radius: 25px;
+    animation: col 10s ease-in-out  infinite;
+}
+@keyframes col{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+</style>
+    <div class="main">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="box3">
+
+        </div>
+    </div>
+
+<div class="container">
+    <div class="card">
+        <div class="head">Hello there !</div>
+        <div class="text">Just Wannabe who want learn much about web programming and pentesting, also active on Bugcrowd and other bug hunting program <3</div>
+    </div>
+    <div class="img">
+        <img src="https://source.unsplash.com/500x500/?scenery" alt="">
+    </div>
+</div>
+</div>
