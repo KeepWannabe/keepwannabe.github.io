@@ -120,7 +120,7 @@ printf "\n ${LBLUE}From${WHITE}: abi@localheart\n ${LBLUE}To${WHITE}: ayu@localh
 read openBrowser
 
 openBrowser=${openBrowser,,}    # tolower
-if [[ "${openBrowser}" =~ ^(yes|y)$ ]]; then
+if [[ $(echo ${openBrowser} | tr '[:upper:]' '[:lower:]') =~ ^(yes|y)$ ]]; then
     open -a Safari https://keepwannabe.github.io/valetine.html
 else
     printf " Alright, maybe you can open it later...\n\n"
