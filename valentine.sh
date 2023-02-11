@@ -119,7 +119,6 @@ typingTextAnimate 'less message_2.txt'
 printf "\n ${LBLUE}From${WHITE}: abi@localheart\n ${LBLUE}To${WHITE}: ayu@localheart\n ${LBLUE}Subject${WHITE}: Cute Website\n\n Oh, Almost forget,\n i have something cute for you.\n You want to open it ? (Y/n) "
 read openBrowser
 
-openBrowser=${openBrowser,,}    # tolower
 if [[ $(echo ${openBrowser} | tr '[:upper:]' '[:lower:]') =~ ^(yes|y)$ ]]; then
     open -a Safari https://keepwannabe.github.io/valetine.html
 else
